@@ -130,4 +130,10 @@ figcaption a {
 /* At this breakpoint, transition to 3 figures per line */
 
 @media (min-width: 800px) {
+  section h2 {
+    margin-left: 100px;
+  }
+  section li {
+    flex-basis: 32.5%;
+  }
 }
