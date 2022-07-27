@@ -77,6 +77,8 @@ figcaption a {
 
 /* At this breakpoint, transition to 2 figures per line */
 
+/* turn on flexbox here - prior to this, elements stacked individually as blocks */
+
 @media (min-width: 550px) {
   section ul {
     display: flex;
