@@ -73,6 +73,21 @@ figcaption a {
   border-color: var(--color8);
   color: var(--color8);
 }
+
+/* mission styles */
+
+#mission {
+  margin-bottom: 3rem;
+}
+.missiontext {
+  display: block;
+  line-height: 1.7;
+}
+.missionimg {
+  max-height: 100px;
+  display: block;
+}
+
 /* Initial mobile layout: a series of images stacked on top of each other with the figure caption over the image. */
 
 /* At this breakpoint, transition to 2 figures per line */
@@ -91,6 +106,20 @@ figcaption a {
   figure img {
     object-position: 0;
   }
+  .missiontext {
+    display: flow-root;
+    max-width: 900px;
+  }
+  .missionimg {
+    float: left;
+    shape-outside: polygon(
+      35.84% 94.87%,
+      34.64% 87.05%,
+      51.64% 4.06%,
+      55.1% 2.38%
+    );
+    max-height: 211px;
+  }
 }
 
 /* At this breakpoint, transition to 3 figures per line */
@@ -102,18 +131,4 @@ figcaption a {
   section li {
     flex-basis: 32.5%;
   }
-}
-
-/* mission styles */
-
-#mission {
-  margin-bottom: 3rem;
-}
-.missiontext {
-  display: block;
-  line-height: 1.7;
-}
-.missionimg {
-  max-height: 100px;
-  display: block;
 }
