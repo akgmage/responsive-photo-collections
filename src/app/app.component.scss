@@ -123,12 +123,15 @@ footer address {
 /* turn on flexbox here - prior to this, elements stacked individually as blocks */
 
 @media (min-width: 550px) {
-  section ul {
+  section ul,
+  footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
   }
-  section li {
+  section li,
+  .social,
+  address {
     flex-basis: 49.5%;
   }
   figure img {
@@ -148,6 +151,9 @@ footer address {
     );
     max-height: 211px;
   }
+  footer address {
+    margin-top: 0;
+  }
 }
 
 /* At this breakpoint, transition to 3 figures per line */
@@ -156,7 +162,11 @@ footer address {
   section h2 {
     margin-left: 100px;
   }
-  section li {
+  section li,
+  .social {
     flex-basis: 32.5%;
+  }
+  address {
+    flex-basis: 65.5%;
   }
 }
