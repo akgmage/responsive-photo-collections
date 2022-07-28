@@ -111,6 +111,11 @@ footer ul {
 footer li {
   margin-right: 1rem;
 }
+footer address {
+  font-style: normal;
+  margin-top: 2rem;
+  font-weight: bold;
+}
 /* Initial mobile layout: a series of images stacked on top of each other with the figure caption over the image. */
 
 /* At this breakpoint, transition to 2 figures per line */
