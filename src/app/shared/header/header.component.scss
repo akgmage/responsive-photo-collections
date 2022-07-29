@@ -19,14 +19,35 @@ nav ul {
   flex-flow: row wrap;
   justify-content: flex-end;
 }
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
 nav a {
   text-decoration: none;
   font-size: 1.2rem;
   color: var(--color1);
   display: block;
-  padding-right: 1rem;
+  padding: 0.5rem;
 }
-
+@media (min-width: 550px) {
+  nav ul {
+    justify-content: center;
+    gap: 1.2em;
+  }
+  nav li {
+    flex-basis: auto;
+    margin-bottom: 0;
+  }
+  nav a {
+    color: var(--color1);
+    background-color: transparent;
+  }
+  nav a:hover {
+    color: var(--color2);
+    background-color: transparent;
+  }
+}
 @media (min-width: 800px) {
   nav ul {
     justify-content: flex-end;
