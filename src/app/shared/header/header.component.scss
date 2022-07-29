@@ -17,5 +17,31 @@ nav ul {
 nav ul {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: flex-end;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--color1);
+  display: block;
+  padding-right: 1rem;
+}
+
+@media (min-width: 800px) {
+  nav ul {
+    justify-content: flex-end;
+  }
+  nav li:first-child {
+    flex-basis: auto;
+    margin: 0 auto;
+    order: 2;
+  }
+  nav li:nth-child(2),
+  nav li:nth-child(3) {
+    order: 1;
+  }
+  nav li:nth-child(4),
+  nav li:nth-child(5) {
+    order: 3;
+  }
 }
