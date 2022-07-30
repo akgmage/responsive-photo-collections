@@ -95,15 +95,12 @@ figcaption a {
 /* turn on flexbox here - prior to this, elements stacked individually as blocks */
 
 @media (min-width: 550px) {
-  section ul,
-  footer {
+  section ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
   }
-  section li,
-  .social,
-  address {
+  section li {
     flex-basis: 49.5%;
   }
   figure img {
@@ -123,9 +120,6 @@ figcaption a {
     );
     max-height: 211px;
   }
-  footer address {
-    margin-top: 0;
-  }
 }
 
 /* At this breakpoint, transition to 3 figures per line */
@@ -134,11 +128,7 @@ figcaption a {
   section h2 {
     margin-left: 100px;
   }
-  section li,
-  .social {
+  section li {
     flex-basis: 32.5%;
-  }
-  address {
-    flex-basis: 65.5%;
   }
 }
