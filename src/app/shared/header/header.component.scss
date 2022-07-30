@@ -13,11 +13,13 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-nav ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
+}
+nav li {
+  flex-basis: 48%;
+  margin-bottom: 0.5rem;
 }
 nav li:first-child {
   flex-basis: 100%;
