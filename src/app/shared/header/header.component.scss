@@ -38,6 +38,10 @@ nav a {
 nav li:first-child a {
   background-color: transparent;
 }
+nav a:hover {
+  background-color: var(--color1);
+  color: var(--color5);
+}
 @media (min-width: 550px) {
   nav ul {
     justify-content: center;
