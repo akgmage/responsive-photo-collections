@@ -29,8 +29,14 @@ nav a {
   text-decoration: none;
   font-size: 1.2rem;
   color: var(--color1);
+  background-color: var(--color10);
   display: block;
+  border-radius: 5px;
   padding: 0.5rem;
+  text-align: center;
+}
+nav li:first-child a {
+  background-color: transparent;
 }
 @media (min-width: 550px) {
   nav ul {
