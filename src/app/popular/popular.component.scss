@@ -47,3 +47,19 @@ figure img {
     object-position: 0;
   }
 }
+
+@media (min-width: 800px) {
+  section h2 {
+    margin-left: 100px;
+  }
+  section li,
+  #popular li:last-child {
+    flex-basis: 32.5%;
+  }
+  #popular li:last-child figure img {
+    object-position: 0;
+  }
+  address {
+    flex-basis: 65.5%;
+  }
+}
