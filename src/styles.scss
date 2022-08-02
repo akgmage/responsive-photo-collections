@@ -33,11 +33,20 @@ body {
   padding: 0;
   margin: 0;
 }
-
 section {
   max-width: 1200px;
-  margin: 0 auto 5rem auto;
+  margin: 0 auto;
   padding: 0 1rem;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  color: var(--color3);
+}
+section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 figure {
   margin: 0 0 0.5rem 0;
