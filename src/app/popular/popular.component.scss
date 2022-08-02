@@ -3,3 +3,28 @@
   color: white;
   padding: 1rem 0 2rem 0;
 }
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 550px) {
+  section ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  section li {
+    flex-basis: 49.5%;
+  }
+  #popular li:last-child {
+    flex-basis: 100%;
+  }
+  #popular li:last-child figure img {
+    object-position: 0 -350px;
+  }
+  figure img {
+    object-position: 0;
+  }
+}
