@@ -8,7 +8,26 @@ ul {
   padding: 0;
   margin: 0;
 }
+figure {
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+  height: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  position: relative;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 5px;
+}
 
+/* strange open space at the bottom of the box which shows through the transparent overlay - this kills it */
+
+figure img {
+  margin-bottom: -4px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0 -150px;
+}
 @media (min-width: 550px) {
   section ul {
     display: flex;
