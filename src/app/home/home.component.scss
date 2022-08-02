@@ -13,37 +13,6 @@ section ul {
   padding: 0;
   margin: 0;
 }
-figure {
-  margin: 0 0 0.5rem 0;
-  padding: 0;
-  max-height: 400px;
-  overflow: hidden;
-  position: relative;
-  border-width: 10px;
-  border-style: solid;
-  border-radius: 5px;
-}
-figure img {
-  margin-bottom: -4px;
-  width: 100%;
-  object-fit: cover;
-  object-position: 0 -150px;
-}
-figcaption {
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1.875rem;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-figcaption a {
-  display: block;
-  padding: 1rem;
-  text-decoration: none;
-  color: var(--color1);
-}
 .color2,
 .color2 a:hover {
   border-color: var(--color2);
